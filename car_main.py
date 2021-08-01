@@ -74,7 +74,7 @@ pages_dict = {
 st.sidebar.title('Navigation')
 user_choice = st.sidebar.radio("Go to", tuple(pages_dict.keys()))
 if user_choice == "Home":
-    home.app() 
+    car_home.app() 
 else:
     selected_page = pages_dict[user_choice]
     selected_page.app(final_cars_df) 
